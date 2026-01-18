@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uPortfolio by L'Ingé Patrimoine</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               brand: {
-                navy: '#0f172a',
-                gold: '#c5a059',
-                goldlight: '#dfc693',
-                cream: '#fcfaf7'
+                primary: '#0A2540',
+                accent: '#00D9FF',
+                accentdark: '#00B8D9',
+                light: '#F8F9FA',
+                muted: '#6C757D'
               }
             },
             fontFamily: {
-              serif: ['Playfair Display', 'serif'],
+              heading: ['Outfit', 'sans-serif'],
               sans: ['Inter', 'sans-serif'],
             }
           }
@@ -30,11 +31,11 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #fcfaf7;
-            color: #0f172a;
+            background-color: #F8F9FA;
+            color: #212529;
         }
-        h1, h2, h3, .font-serif {
-            font-family: 'Playfair Display', serif;
+        h1, h2, h3, .font-heading {
+            font-family: 'Outfit', sans-serif;
         }
         .custom-scrollbar::-webkit-scrollbar {
           width: 5px;
@@ -49,11 +50,17 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
           background: #94a3b8;
         }
-        .gold-gradient {
-          background: linear-gradient(135deg, #c5a059 0%, #dfc693 100%);
+        .accent-gradient {
+          background: linear-gradient(135deg, #00D9FF 0%, #00A3FF 100%);
         }
-        .navy-gradient {
-          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        .primary-gradient {
+          background: linear-gradient(135deg, #0A2540 0%, #0D3D5F 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
         }
     </style>
 <script type="importmap">

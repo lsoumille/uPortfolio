@@ -39,6 +39,7 @@ export interface RiskProfile {
 export interface AssetAllocation {
   category: string;
   percentage: number;
+  reason?: string; // Justification du poids
   examples: string[];
 }
 
